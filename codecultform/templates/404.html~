@@ -1,0 +1,6 @@
+{% load i18n %}
+
+
+<h1>Page not found</h1>
+<p>Sorry, but the requested page could not be found.</p>
+<a href="http://codecult.nl">Code Cult Homepage</a>
