@@ -3,7 +3,6 @@ from rest_framework import viewsets
 from .models import SummerSchoolSignUp
 from .serializers import SignUpSerializer
 
-@permission_classes((AllowAny, ))
 class SignUpViewSet(viewsets.ModelViewSet):
     queryset = SummerSchoolSignUp.objects.all()
     serializer_class = SignUpSerializer
