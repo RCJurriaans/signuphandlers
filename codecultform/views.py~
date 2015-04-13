@@ -1,7 +1,7 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
 from .models import SummerSchoolSignUp
-from signuphandlers.codecultform.serializers import SignUpSerializer
+from .serializers import SignUpSerializer
 
 
 class SignUpViewSet(viewsets.ModelViewSet):
