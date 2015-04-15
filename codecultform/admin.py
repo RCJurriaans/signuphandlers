@@ -1,5 +1,9 @@
 from django.contrib import admin
 from codecultform.models import SummerSchoolSignUp
 
+class SSAdmin(admin.ModelAdmin):
+    list_display = ('name', 'email', 'city', 'message',)
+    list_filter = ('city',)
+
 # Register your models here.
-admin.site.register(SummerSchoolSignUp)
+admin.site.register(SummerSchoolSignUp, SSAdmin)

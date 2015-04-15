@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import SummerSchoolSignUp
+from codecultform.models import SummerSchoolSignUp
 
 # Register your models here.
 admin.site.register(SummerSchoolSignUp)
