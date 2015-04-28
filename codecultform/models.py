@@ -9,6 +9,7 @@ class SummerSchoolSignUp(models.Model):
     name = models.CharField(max_length=255, blank=True)
     email = models.CharField(max_length=255)
     city = models.CharField(max_length=2, choices=CITY_CHOICES)
+    age = models.PositiveIntegerField(null=True, blank=True)
     message = models.TextField(blank=True)
     
     def __repr__(self):
