@@ -6,4 +6,4 @@ from rest_framework import serializers
 class SignUpSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = SummerSchoolSignUp
-        fields = ('name', 'email', 'city', 'message')
+        fields = ('name', 'email', 'age', 'city', 'message')

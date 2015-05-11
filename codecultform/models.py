@@ -11,6 +11,7 @@ class SummerSchoolSignUp(models.Model):
     city = models.CharField(max_length=2, choices=CITY_CHOICES)
     age = models.PositiveIntegerField(null=True, blank=True)
     message = models.TextField(blank=True)
+    parent = models.CharField(max_length=255, null=True, blank=True)
     
     def __repr__(self):
         return str(self)
