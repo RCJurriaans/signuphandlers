@@ -2,9 +2,10 @@ from django.db import models
 
 class SummerSchoolSignUp(models.Model):
     CITY_CHOICES = (
-        ('AM', 'Amsterdam'),
-        ('UT', 'Utrecht'),
-        ('AR', 'Arnhem'),
+        ('AM', 'Amsterdam (6-10 Juli)'),
+        ('AM2', 'Amsterdam (13-17 Juli)'),
+        ('UT', 'Utrecht (17-21 Augustus)'),
+        ('AR', 'Arnhem (24-28 Augustus)'),
     )
     name = models.CharField(max_length=255, blank=True)
     email = models.CharField(max_length=255)
