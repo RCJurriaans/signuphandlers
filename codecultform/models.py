@@ -13,6 +13,7 @@ class SummerSchoolSignUp(models.Model):
     age = models.PositiveIntegerField(null=True, blank=True)
     message = models.TextField(blank=True)
     parent = models.CharField(max_length=255, null=True, blank=True)
+    parent_phone = models.CharField(max_length=255, null=True, blank=True)
     
     def __repr__(self):
         return str(self)

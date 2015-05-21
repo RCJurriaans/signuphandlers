@@ -3,7 +3,7 @@ from django.db import models
 class SummerSchoolSignUp(models.Model):
     CITY_CHOICES = (
         ('AM', 'Amsterdam (6-10 Juli)'),
-        ('AM2', 'Amsterdam (13-17 Juli)'),
+        ('A2', 'Amsterdam (13-17 Juli)'),
         ('UT', 'Utrecht (17-21 Augustus)'),
         ('AR', 'Arnhem (24-28 Augustus)'),
     )
